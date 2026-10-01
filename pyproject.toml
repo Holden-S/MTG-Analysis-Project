@@ -1,0 +1,25 @@
+[project]
+name = "mtg-analysis-project"
+version = "0.1.0"
+description = "A project that analyzes the cost of Magic: the Gathering cards based on multiple factors and finds the most price effective options for beginners."
+readme = "README.md"
+authors = [
+    { name = "HoldenS", email = "HoldenSvacha426@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "plotly>=7.1.0",
+    "jupyterlab>=4.4.0",
+    "requests>=2.34.2",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+mtg-analysis-project = "mtg_analysis_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
